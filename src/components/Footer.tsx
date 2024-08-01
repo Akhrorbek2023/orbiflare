@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="bg-blue-500 text-white p-4 mt-auto">
       <p className="text-center">
         {'© '}
-        Tahrirchi.uz Clone {new Date().getFullYear()}
+        Orbiflare.uz {new Date().getFullYear()}
       </p>
     </footer>
   );

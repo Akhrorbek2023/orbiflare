@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import './App.css'
+import WhyOrbiflare from './pages/WhyOrbiflare';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<About />} />
+            <Route path="/why" element={<WhyOrbiflare />} />
           </Routes>
         </main>
         <Footer />

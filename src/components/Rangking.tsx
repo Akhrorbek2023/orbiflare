@@ -7,23 +7,23 @@ interface RankingData {
 }
 
 const data: RankingData[] = [
-  { name: 'Ken', points: 26, percentage: 87 },
+  { name: 'Kun.uz', points: 26, percentage: 87 },
   { name: 'Daryo', points: 19, percentage: 84 },
-  { name: 'Dolamp', points: 10, percentage: 70 },
+  { name: 'Darakchi', points: 10, percentage: 70 },
 ];
 
 const RankingTable: React.FC = () => {
   return (
-    <div className="w-[300px] mt-4 border border-1 border-blue-500 h-[100%] text-white p-4">
-      <h1 className='text-center py-2 text-blue-500 text-[28px]'>Rangking</h1>
-      <div className='grid grid-cols-3 text-center mb-3 bg-blue-500 p-3'>
-        <span className='text-start'>Ranging</span>
-        <span className=' '>Maqolalar soni</span>
-        <span className=''>Umumiy natijalar</span>
+    <div className="w-[300px] mt-4 border border-1 border-blue-gray-200 text-white p-4 rounded-md">
+      <h1 className='text-center py-2 text-blue-500 text-[28px]'>Ranking</h1>
+      <div className='grid grid-cols-3 text-center mb-3 bg-blue-500 p-3 rounded-md'>
+        <span className='text-start'>Sites</span>
+        <span className=' '>Amount of Articles</span>
+        <span className=''>Overall results</span>
       </div>
       {
         data.map((item, i) => (
-            <div className='grid grid-cols-3 text-center mb-2 bg-blue-500 p-3 hover:scale-105'>
+            <div className='grid grid-cols-3 text-center mb-2 bg-blue-500 p-3 hover:scale-105 rounded-md'>
             <span className='text-start'>{i+1}.{item.name}</span>
             <span className=''>{item.points}</span>
             <span className=''>{item.percentage}%</span>
